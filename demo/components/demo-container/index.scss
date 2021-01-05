@@ -1,0 +1,59 @@
+@import "@/demo/styles/variables.scss";
+
+.demo-container {
+  color: $__color_text1;
+  border: 1px solid $__color_line2;
+  overflow: hidden;
+  max-width: 1000px;
+
+  &__source {
+    padding: 18px;
+    border-bottom: 1px solid $__color_line2;
+  }
+
+  &__description {
+    padding: 8px 18px;
+    border-bottom: 1px solid $__color_line2;
+    font-size: 14px;
+    color: $__color_text2;
+  }
+
+  &__control {
+    line-height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: $__color_second;
+    user-select: none;
+
+    &-button {
+      cursor: pointer;
+    }
+  }
+
+  &__highlight-box {
+    overflow: hidden;
+    transition: height 160ms ease;
+    height: 0;
+  }
+
+  &__highlight {
+    border-bottom: none;
+
+    code.hljs {
+      margin: 0;
+      border: none;
+      max-height: none;
+      border-radius: 0;
+      font-size: 12px;
+      line-height: 1.8;
+      font-family: Menlo, Monaco, Consolas, Courier, monospace;
+      padding: 16px 20px;
+      border-bottom: 1px solid $__color_line2;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "@/demo/styles/variables.scss";
+
+.all-icon {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 120px;
+    border: 1px solid $__color_line3;
+    border-radius: 4px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    &:active {
+      cursor: pointer;
+      border: 1px solid $__color_second;
+    }
+
+    .fa-icon {
+      font-size: 26px;
+      color: $__color_text4;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 12px;
+      color: $__color_text4;
+      text-align: center;
+      line-height: 14px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
